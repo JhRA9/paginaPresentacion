@@ -18,13 +18,13 @@
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#">About</a></li>
-          <li class="header__nav-item"><a href="#">Portafolio</a></li>
-          <li class="header__nav-item"><a href="#">Contacto</a></li>
+          <li class="header__nav-item"><a href="#profile">About</a></li>
+          <li class="header__nav-item"><a href="#portfolio">Portafolio</a></li>
+          <li class="header__nav-item"><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main class="profile">
+    <main class="profile" id="profile">
       <div class="profile__wrapper">
         <div class="profile__img-container">
           <img class="profile__img" src="recursos/personal.webp" alt="" />
@@ -34,10 +34,7 @@
             <div class="profile__description">
               <h1>¿Quien es Jhon?</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatum ut praesentium dignissimos error quaerat! Mollitia
-                laborum explicabo veritatis dolorem expedita! Ut et velit ipsum
-                rem veritatis. Voluptatem dignissimos quo dolores?
+                Soy
               </p>
             </div>
 
@@ -73,10 +70,12 @@
                 </li>
 
                 <li class="profile__skill">
-                    <div class="load-bar">
-                      <div class="load-bar__bar bar--100">100%</div>
-                    </div>
-                    <span class="profile__skill-name">PROCRASTINACION AL FALLO</span>
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--100">100%</div>
+                  </div>
+                  <span class="profile__skill-name"
+                    >PROCRASTINACION AL FALLO</span
+                  >
                 </li>
               </ul>
             </div>
@@ -84,28 +83,65 @@
         </div>
       </div>
     </main>
-    <section class="portfolio">
-        <h2 class="portfolio__title">SECCION DEL PORTAFOLIO</h2>
-        <div class="portfolio__project-container">
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 1</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 2</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 3</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 4</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 5</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROJECT 6</h2>
-            </div>
+    <section class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">SECCION DEL PORTAFOLIO</h2>
+      <div class="portfolio__project-container">
+        <div class="portfolio__project">
+          <a href="https://jhpr21.netlify.app/">
+            <h2 class="portfolio__project-name">
+              Proyecto e-comerce "Venta de garaje"
+            </h2>
+          </a>
         </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT 2</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT 3</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT 4</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT 5</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">Proyecto "Gestor escolar"</h2>
+        </div>
+      </div>
     </section>
+    <section class="form" id="contacto">
+      <h2 class="form__title">Contacto</h2>
+      <form action="https://formsubmit.co/jhperezr21@gmail.com" method="POST" class="form__form">
+        <div class="form__input-container">
+          <label
+            >Nombre
+            <input type="text" name="name" placeholder="Jhon" required />
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label
+            >Apellido
+            <input type="text" placeholder="Doe" required />
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label
+            >Mail
+            <input type="email" name="email" placeholder="example@domain.com" required />
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label
+            >Mensaje
+            <textarea name="message" placeholder="Your message" required></textarea>
+          </label>
+        </div>
+        <div class="form__input-container">
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+    <footer><strong>Jhon Perez</strong> - Copyright 2025</footer>
   </body>
 </html>
