@@ -7,7 +7,6 @@
     <title>RA9</title>
   </head>
   <body>
-    <!-- Encabezado con accesibilidad -->
     <header class="header">
       <input type="checkbox" class="header__checkbox" id="open-menu" />
       <label for="open-menu" class="header__open-nav-button" role="button"
@@ -22,6 +21,30 @@
           <li class="header__nav-item"><a href="#portfolio">Portafolio</a></li>
           <li class="header__nav-item"><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="header__social-links">
+          <a
+            href="https://github.com/JhRA9"
+            target="_blank"
+            class="header__social-link"
+          >
+            <img
+              src="recursos/github.png"
+              alt="GitHub"
+              class="header__social-icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jhperezr21"
+            target="_blank"
+            class="header__social-link header__social-link--linkedin"
+          >
+            <img
+              src="recursos/linkedin.png"
+              alt="LinkedIn"
+              class="header__social-icon"
+            />
+          </a>
+        </div>
       </nav>
     </header>
     <main class="profile" id="profile">
@@ -34,7 +57,25 @@
             <div class="profile__description">
               <h1>¿Quien es Jhon?</h1>
               <p>
-                Soy
+                Soy estudiante de Ingeniería de Sistemas con una curiosidad
+                infinita por el mundo que nos rodea. Cada día es una nueva
+                oportunidad para aprender algo fascinante: desde crear
+                interfaces web que conecten con las personas, hasta explorar los
+                misterios de la inteligencia artificial que está transformando
+                nuestro futuro.
+              </p>
+              <p>
+                Cuando no estoy programando o estudiando algoritmos, me
+                encuentras observando las estrellas. La astronomía me recuerda
+                lo pequeños que somos en este vasto universo, pero también lo
+                increíble que es poder entenderlo a través de la ciencia y la
+                tecnología.
+              </p>
+              <p>
+                Creo firmemente que la mejor forma de crecer es mantener los
+                pies en la tierra y la mente abierta. Cada error es una lección,
+                cada proyecto es una aventura, y cada línea de código es un paso
+                más hacia algo extraordinario.
               </p>
             </div>
 
@@ -73,9 +114,7 @@
                   <div class="load-bar">
                     <div class="load-bar__bar bar--100">100%</div>
                   </div>
-                  <span class="profile__skill-name"
-                    >PROCRASTINACION AL FALLO</span
-                  >
+                  <span class="profile__skill-name">AUTODIDACTA AL FALLO</span>
                 </li>
               </ul>
             </div>
@@ -84,17 +123,19 @@
       </div>
     </main>
     <section class="portfolio" id="portfolio">
-      <h2 class="portfolio__title">SECCION DEL PORTAFOLIO</h2>
+      <h2 class="portfolio__title">PORTAFOLIO</h2>
       <div class="portfolio__project-container">
         <div class="portfolio__project">
-          <a href="https://jhpr21.netlify.app/">
+          <a href="https://yardsalejhpr.netlify.app">
             <h2 class="portfolio__project-name">
               Proyecto e-comerce "Venta de garaje"
             </h2>
           </a>
         </div>
         <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT 2</h2>
+          <a href="https://gameoflivejhpr.netlify.app/">
+            <h2 class="portfolio__project-name">Juego de la vida</h2>
+          </a>
         </div>
         <div class="portfolio__project">
           <h2 class="portfolio__project-name">PROJECT 3</h2>
@@ -106,13 +147,19 @@
           <h2 class="portfolio__project-name">PROJECT 5</h2>
         </div>
         <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto "Gestor escolar"</h2>
+          <a href="http://44.213.131.209/">
+            <h2 class="portfolio__project-name">Proyecto "Gestor escolar"</h2>
+          </a>
         </div>
       </div>
     </section>
     <section class="form" id="contacto">
       <h2 class="form__title">Contacto</h2>
-      <form action="https://formsubmit.co/jhperezr21@gmail.com" method="POST" class="form__form">
+      <form
+        action="https://formsubmit.co/jhperezr21@gmail.com"
+        method="POST"
+        class="form__form"
+      >
         <div class="form__input-container">
           <label
             >Nombre
@@ -122,23 +169,32 @@
         <div class="form__input-container">
           <label
             >Apellido
-            <input type="text" placeholder="Doe" required />
+            <input type="text" name="lastname" placeholder="Doe" required />
           </label>
         </div>
         <div class="form__input-container">
           <label
             >Mail
-            <input type="email" name="email" placeholder="example@domain.com" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="example@domain.com"
+              required
+            />
           </label>
         </div>
         <div class="form__input-container">
           <label
             >Mensaje
-            <textarea name="message" placeholder="Your message" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
           </label>
         </div>
         <div class="form__input-container">
-          <input type="submit" />
+          <input type="submit" value="Enviar" />
         </div>
       </form>
     </section>
